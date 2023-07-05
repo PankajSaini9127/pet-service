@@ -3,15 +3,17 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 
 //SVG ICON
-import DogyCare from "../../Assests/first-aid-kit.svg";
-import HouseSitting from "../../Assests/house-siting.svg";
-import DogWalking from "../../Assests/dog-walking-serv-1.svg";
-import DropVisit from "../../Assests/dropvisit.svg";
+import DogyCare from "../../../assets/Images/home/first-aid-kit.svg";
+import HouseSitting from "../../../assets/Images/home/house-siting.svg";
+import DogWalking from "../../../assets/Images/home/dog-walking-serv-1.svg";
+import DropVisit from "../../../assets/Images/home/dropvisit.svg";
 
-import moment from 'moment';
+//img
+import title_logo from "../../../assets/Images/home/paw-title.svg";
+import arrow from "../../../assets/Images/home/Epic-arrow4.png";
 
 //CSS
-import "./Appoinment.css";
+import "../../../assets/css/home/serviceAppoinment.css";
 import "react-datepicker/dist/react-datepicker.css";
 
 import {
@@ -20,20 +22,31 @@ import {
   Checkbox,
   FormControl,
   FormControlLabel,
-  FormLabel,
   Radio,
   RadioGroup,
   TextField,
   Typography,
 } from "@mui/material";
 
-function Appoinement() {
+function ServiceAppoinment() {
   const [startDate, setStartDate] = useState(new Date());
   return (
+    //appoinment section start here
     <section className="appoinment-wrapper">
       <Box className="appoinment-container">
+        <Box
+          component={"img"}
+          src={arrow}
+          alt="arrow"
+          className="appoinment-arrow"
+        />
         <Box className="appoinment-heading-wrapper">
-          <Typography>Service Appoinment</Typography>
+          <Box className="appoinment-title">
+            <Box component={"img"} src={title_logo} alt="logo" height="25px" />
+            <Typography className="appoinment-title">
+              Service Appoinment
+            </Typography>
+          </Box>
           <Typography className="appoinment-heading">
             Book Now An Appointment
           </Typography>
@@ -127,36 +140,38 @@ function Appoinement() {
             <FormControl className="appoinment-dateRenge">
               <Typography>What dates do you need ?</Typography>
               <Box>
-              <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} dateFormat="dd/MM/yyyy"/>
-              <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} dateFormat="dd/MM/yyyy"/>
+                <DatePicker
+                  selected={startDate}
+                  onChange={(date) => setStartDate(date)}
+                  dateFormat="dd/MM/yyyy"
+                />
+                <DatePicker
+                  selected={startDate}
+                  onChange={(date) => setStartDate(date)}
+                  dateFormat="dd/MM/yyyy"
+                />
               </Box>
             </FormControl>
-            </Box>
+          </Box>
 
-            <Box>
+          <Box>
             <FormControl>
               <Typography>What time do you need ?</Typography>
               <Box className="appoinment-timeslot">
-                 <Box>
-                  <Typography>6am - 11am</Typography>
-                 </Box>
-                 <Box>
-                  <Typography>11am - 3pm</Typography>
-                 </Box>
-                 <Box>
-                  <Typography>3pm - 10pm</Typography>
-                 </Box>
-                 </Box>
+                <Box className="appoinment-timeslot-time">6am - 11am</Box>
+                <Box className="appoinment-timeslot-time">11am - 3pm</Box>
+                <Box className="appoinment-timeslot-time">3pm - 10pm</Box>
+              </Box>
             </FormControl>
-            
           </Box>
-          <Box>
+          <Box className="appoinment-btn">
             <Button>Submit</Button>
           </Box>
         </Box>
       </Box>
     </section>
+    // appoinment section end here
   );
 }
 
-export default Appoinement;
+export default ServiceAppoinment;

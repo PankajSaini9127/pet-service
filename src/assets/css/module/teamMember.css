@@ -1,0 +1,38 @@
+.team-details-container{
+    height: 350px !important;
+    width: 300px !important;
+    border-radius: 25px;
+    position: relative;
+}
+
+.team-details-container > img{
+  border-radius: 10px !important;
+  margin: 15px;
+}
+
+.team-name{
+  text-align: center !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  line-height: 25px !important;
+  color: rgba(0,0,0,0.9);
+}
+
+.team-descrption{
+ text-align: center;
+ font-weight: 500 !important;
+ color: rgba(0,0,0,0.75);
+ font-size: 16px !important;
+ padding: 5px 15px;
+ line-height: 18px !important;
+}
+
+/* //overlay in uesr details */
+
+.team-profile-overlay{
+    background: #00000099 !important;
+    height: 270px;
+    border-radius: 10px;
+    margin: 15px;
+    position: absolute;
+}

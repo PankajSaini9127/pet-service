@@ -1,20 +1,42 @@
 .appoinment-wrapper{
-    background-image: url('../../Assests/Images/appointmentBg.jpg');
+    background-image: url('../../../assets/Images/home/appointmentBg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
-    opacity: 0.9;
+    height: 1100px;
+    opacity: 0.95;
+    width: 100%;
 }
 
 .appoinment-container{
     float: right;
     width: 40vw !important;
     margin: 70px 10px;
+    position: relative;
+}
+.appoinment-arrow{
+    position: absolute;
+    height: 200px;
+    top: 90px;
+    right: 550px;
 }
 
 .appoinment-heading-wrapper{
     width: 60%;
 }
+
+.appoinment-title{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.appoinment-title:last-child{
+   color: #fff !important;
+   margin-left: 6px;
+   line-height: 16px;
+   display: flex;
+   align-items: end;
+}
+
 .appoinment-heading{
     font-size: 45px !important;
     line-height: 50px !important;
@@ -24,11 +46,11 @@
 
 .appoinment-form{
     background-color: #FFFFFF;
-    height: 650px !important;
-    width:90% !important;
+    /* height: 650px !important; */
+    width:83% !important;
     border-radius: 20px ;
     margin-top: 15px;
-    padding: 30px !important;
+    padding: 40px !important;
 }
 
 .appoinment-form > *{
@@ -87,14 +109,13 @@
 /* Date range in form  */
 .appoinment-dateRenge > div{
     display: flex;
-
 }
 
 .appoinment-dateRenge input{
     border: 1px solid rgba(0,0,0,0.6) !important;
     border-radius: 25px !important;
     height: 45px !important;
-    padding: 0 15px;
+    padding: 0 10px;
     margin: 0 5px;
     font-size: 15px !important;
     text-align: center;
@@ -110,17 +131,35 @@
    flex-wrap: wrap;
 }
 
-.appoinment-timeslot > div{
+.appoinment-timeslot-time{
     border: 1px solid rgba(0,0,0,0.8);
-    border-radius: 20px;
+    border-radius: 25px;
     margin: 10px;
     height: 45px;
     justify-content: center;
     display: flex;
     align-items: center;
-    min-width: 40%;
+    font-weight: 500;
+    padding: 0 20px;
+    color: rgba(0, 0, 0, 0.8);
+    min-width: 35%;
 }
 
-.appoinment-timeslot > div :hover{
-    border: 1px solid var(--brand_color);
+.appoinment-timeslot-time:hover {
+    border: 1px solid var(--brand_color) !important;
+}
+
+/* submit form */
+.appoinment-btn {
+    margin-top: 20px;
+}
+.appoinment-btn > button{
+    height: 50px !important;
+    width: 150px !important;
+    background-color: var(--brand_color) !important;
+    border-radius: 25px !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
 }

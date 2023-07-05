@@ -3,20 +3,17 @@ import {
   Divider,
   Toolbar,
   Box,
-  Typography,
-  Menu,
   MenuItem,
   Button,
 } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 
 //Css File
-import "./Navbar.css";
+import "../../../assets/css/navbar/navbar.css";
 
 //Icon
 import SearchIcon from "@mui/icons-material/Search";
-import { Nav_Logo } from "../../Assests/Images-link";
-import { Home_list } from "./Menu-list";
+import Nav_Logo  from "../../../assets/Images/home/nav-logo.svg";
 
 function Navbar() {
 

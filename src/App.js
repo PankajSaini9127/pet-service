@@ -1,17 +1,14 @@
 
 import './App.css';
-import Appoinement from './Components/Appoinment/Appoinement';
-import HeroSection from './Components/Hero-section/Hero-section';
-import Navbar from './Components/Navbar/Navbar';
+import Navbar from './Components/layout/navbar/Navbar';
+import Home from './Components/pages/home/Home';
 
 function App() {
   return (
     <>
   
    <Navbar/>
-   <HeroSection/>
-
-   <Appoinement/>
+   <Home/>
     </>
   );
 }

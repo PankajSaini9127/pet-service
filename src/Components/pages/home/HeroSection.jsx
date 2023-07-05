@@ -1,7 +1,7 @@
 import React from "react";
 
 //css
-import "./Hero-section.css";
+import "../../../assets/css/home/heroSection.css";
 import { Box, Typography } from "@mui/material";
 
 function HeroSection() {
