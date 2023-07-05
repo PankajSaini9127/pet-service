@@ -1,0 +1,1 @@
+export const Nav_Logo = "https://epicpaws.modeltheme.com/wp-content/uploads/2023/03/logo-1.svg"

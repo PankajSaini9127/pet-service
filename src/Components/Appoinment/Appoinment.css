@@ -1,0 +1,126 @@
+.appoinment-wrapper{
+    background-image: url('../../Assests/Images/appointmentBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    opacity: 0.9;
+}
+
+.appoinment-container{
+    float: right;
+    width: 40vw !important;
+    margin: 70px 10px;
+}
+
+.appoinment-heading-wrapper{
+    width: 60%;
+}
+.appoinment-heading{
+    font-size: 45px !important;
+    line-height: 50px !important;
+    font-weight: 800 !important;
+    color: #fff !important;
+}
+
+.appoinment-form{
+    background-color: #FFFFFF;
+    height: 650px !important;
+    width:90% !important;
+    border-radius: 20px ;
+    margin-top: 15px;
+    padding: 30px !important;
+}
+
+.appoinment-form > *{
+    margin-top: 10px;
+}
+
+.radioBtnGroup{
+    display: none !important;
+}
+
+.appoinment-radio-btn{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.appoinment-radio-btn > *{
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      margin: 5px;
+      border-radius: 20px;
+      min-width: 120px;
+      color: rgba(0, 0, 0, 0.9) ;
+}
+
+.appoinment-radio-btn img{
+    margin: 5px 30%;
+    height: 45px;
+}
+
+.appoinment-radio-btn p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: inherit !important;
+}
+
+
+/* radio btn hover */
+.appoinment-radio-btn > label:hover{
+    border: 1px solid var(--brand_color) !important;
+    color: var(--brand_color) !important;
+}
+
+/* Adress input in apoinment form */
+.appoinment-adressInput input{
+    border: 1px solid rgba(0,0,0,0.6) !important;
+    border-radius: 25px !important;
+    height: 45px !important;
+    padding: 0 15px;
+}
+
+.appoinment-adressInput input:focus{
+    border: 1px solid var(--brand_color) !important;
+}
+
+/* Date range in form  */
+.appoinment-dateRenge > div{
+    display: flex;
+
+}
+
+.appoinment-dateRenge input{
+    border: 1px solid rgba(0,0,0,0.6) !important;
+    border-radius: 25px !important;
+    height: 45px !important;
+    padding: 0 15px;
+    margin: 0 5px;
+    font-size: 15px !important;
+    text-align: center;
+}
+
+.appoinment-dateRenge input:focus{
+    border: 1px solid var(--brand_color) !important;
+}
+
+/* appoinment form time slot section */
+.appoinment-timeslot{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.appoinment-timeslot > div{
+    border: 1px solid rgba(0,0,0,0.8);
+    border-radius: 20px;
+    margin: 10px;
+    height: 45px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-width: 40%;
+}
+
+.appoinment-timeslot > div :hover{
+    border: 1px solid var(--brand_color);
+}
