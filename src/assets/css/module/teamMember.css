@@ -2,13 +2,16 @@
     height: 350px !important;
     width: 300px !important;
     border-radius: 25px;
-    position: relative;
+    position: relative !important;
 }
 
 .team-details-container > img{
   border-radius: 10px !important;
   margin: 15px;
+  position: absolute;
+  top: 0;
 }
+
 
 .team-name{
   text-align: center !important;
@@ -34,5 +37,20 @@
     height: 270px;
     border-radius: 10px;
     margin: 15px;
-    position: absolute;
+    z-index: 11111 !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    visibility: hidden;
+    transition: all 20ms ease-in;
+}
+
+.team-details-container:hover .team-profile-overlay{
+  visibility: visible !important;
+}
+
+.team-profile-overlay > *{
+  margin: 5px;
 }

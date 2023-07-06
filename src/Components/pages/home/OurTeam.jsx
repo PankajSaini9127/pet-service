@@ -38,6 +38,7 @@ const members = [
 
 function OurTeam() {
   return (
+    <>
     <section className="our-team-wrapper">
       <Box className="our-team-heading">
         <Typography className="our-team-main-heading">
@@ -52,9 +53,12 @@ function OurTeam() {
         {members.map((member) => (
           <TeamMember member={member} />
         ))}
-        <Divider/>
+       
       </Box>
+     
     </section>
+     <Divider className="team-divider"/>
+     </>
   );
 }
 
