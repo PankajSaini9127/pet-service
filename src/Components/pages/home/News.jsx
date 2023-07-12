@@ -5,13 +5,14 @@ import "../../../assets/css/home/news.css";
 import { Button, Typography } from "@mui/material";
 
 //img
-import title_logo from "../../../assets/Images/home/paw-title.svg";
 import news1 from "../../../assets/Images/home/epicpaws-blog4.jpg";
 import news2 from "../../../assets/Images/home/epicpaws-blog6.jpg";
 import news3 from "../../../assets/Images/home/epicpaws-blog8.jpg";
+import Arrow from "../../../assets/Images/home/Epic-arrow05 (1).png";
 
 //module
 import NewsArticle from "../../module/NewsArticle";
+import Heading from "../../utils/Heading";
 
 const news = [
   {
@@ -39,17 +40,19 @@ function News() {
     // news section start from here
     <section>
       <Box className="news-wrapper">
-        <Box className="news-title">
-          <Box component={"img"} src={title_logo} alt="logo" height="30px" />
-          <Typography className="news-title">Latest News</Typography>
-        </Box>
-
+        <Heading>Latest News</Heading>
         <Box className="news-heading-container">
+          <Box
+            className="news-heading-arrow"
+            component={"img"}
+            src={Arrow}
+            alt="profile"
+          />
           <Box className="news-heading">
-            <Typography>Pet Articles</Typography>
+            <Typography className="heading-title-globle">Pet Articles</Typography>
           </Box>
           <Box className="news-explore-btn">
-            <Button>View All Blog</Button>
+            <Button className="button-hover-scale">View All Blog</Button>
           </Box>
         </Box>
         <Typography className="news-description">
@@ -57,11 +60,7 @@ function News() {
         </Typography>
 
         <Box className="news-article-container">
-            {
-                news && news.map(info=>(
-<NewsArticle news={info} />
-                ))
-            }
+          {news && news.map((info) => <NewsArticle news={info} />)}
         </Box>
       </Box>
     </section>

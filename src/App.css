@@ -8,3 +8,18 @@
 body{
     font-family: 'Poppins', sans-serif !important;
 }
+
+.button-hover-scale{
+    transition: scale 1s ease !important;
+}
+
+.button-hover-scale:hover{
+    scale: 1.1 !important;
+}
+
+.heading-title-globle{
+    font-weight: 700 !important;
+    font-size: 47px !important;
+    line-height: 50px !important;
+}
+

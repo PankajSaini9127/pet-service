@@ -1,0 +1,47 @@
+.step-book-module-wrapper {
+  border: 1px solid #646464;
+  border-radius: 20px;
+  padding: 20px 20px !important;
+  width: 300px;
+  text-align: center;
+  height: 280px;
+  overflow: hidden;
+}
+
+.step-book-module-image {
+  margin: auto !important;
+  height: 150px !important;
+  width: 150px;
+  transition: height 0.8s ease-in, opacity 1.2s ease !important;
+}
+
+.step-book-module-wrapper:hover .step-book-module-image {
+  height: 80px !important;
+  /* visibility: hidden; */
+  opacity: 0;
+}
+.step-book-module-heading {
+  font-size: 26px !important;
+  font-weight: 600 !important;
+  line-height: 38px !important;
+  color: #242424;
+}
+
+.step-book-module-description {
+  color: #646464;
+  line-height: 25px !important;
+}
+
+.step-book-module-btn {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: var(--brand_color) !important;
+  margin-top: 30px !important;
+  transition: margin-top 1s ease, visibility 0.2s 0.5s ease !important;
+  visibility: hidden;
+}
+
+.step-book-module-wrapper:hover .step-book-module-btn {
+  margin-top: 0px !important;
+  visibility: visible;
+}

@@ -1,6 +1,19 @@
 .footer-wrapper{
-    margin-top: 20px;
     background-color: #faf6f0 !important;
+    position: relative;
+}
+
+.footer-arrow{
+    position: absolute;
+    height: 210px;
+    right: 5%;
+    top: 1%;
+}
+
+.footer-svg{
+    height: 200px !important;
+    overflow: hidden;
+    background-color: #fff;
 }
 
 .footer-subscribe-container{
@@ -14,7 +27,7 @@
     font-size: 35px !important;
     font-weight: 700 !important;
     line-height: 45px !important;
-    padding: 20px 0 20px 30px !important;
+    padding: 0 0 20px 30px !important;
 }
 
 .footer-subscribe{
@@ -53,6 +66,11 @@
     border: none;
     border-radius: 30px;
     right: 25px;
+    transition: all 1s ease !important;
+}
+
+.footer-subscribe >button:hover{
+    scale: 1.1 !important;
 }
 
 .footer-container{

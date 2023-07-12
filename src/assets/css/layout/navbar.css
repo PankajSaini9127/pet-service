@@ -80,15 +80,7 @@
     font-family: inherit !important;
     text-transform: capitalize !important;
     border-radius: 25px !important;
-    margin-left: 9px !important;
-    transition: all 0.3s !important;
-    transition-delay: 0.2s !important;
+    margin-left: 9px !important;;
 }
 
-.nav-btn:hover{
-    padding: 16px 52px !important;
-    border-radius: 28px !important;
-    box-shadow: 1px 1px rgba(0,0,0,0.12);
-    font-size: 15px !important;
-}
 

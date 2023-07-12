@@ -1,0 +1,11 @@
+.heading-title{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.heading-title:last-child{
+   margin-left: 6px;
+   line-height: 16px;
+   display: flex;
+   align-items: flex-end;
+}

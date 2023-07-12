@@ -1,0 +1,27 @@
+.step-book-wrapper{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.step-book-arrow{
+    position: absolute;
+    top: -40%;
+    right: 12%;
+}
+
+.step-book-heading{
+    margin-top: 50px !important;
+    text-align: center !important;
+}
+
+.step-book-description{
+    color: #646464 !important;
+    text-align: center !important;
+    font-size: 20px !important;
+}
+
+.step-book-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 30px !important;
+}

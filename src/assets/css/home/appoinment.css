@@ -24,23 +24,7 @@
     width: 60%;
 }
 
-.appoinment-title{
-    display: flex;
-    margin-bottom: 5px;
-}
-
-.appoinment-title:last-child{
-   color: #fff !important;
-   margin-left: 6px;
-   line-height: 16px;
-   display: flex;
-   align-items: end;
-}
-
 .appoinment-heading{
-    font-size: 45px !important;
-    line-height: 50px !important;
-    font-weight: 800 !important;
     color: #fff !important;
 }
 

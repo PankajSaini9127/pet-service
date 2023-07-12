@@ -1,0 +1,10 @@
+.specification-wrapper{
+    padding: 50px 0;
+    margin: auto;
+    width: 90%;
+}
+
+.specification-container{
+     display: flex;
+     justify-content: space-evenly;
+}

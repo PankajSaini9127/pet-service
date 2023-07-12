@@ -9,7 +9,7 @@ import {
 import React from "react";
 
 //Css File
-import "../../../assets/css/navbar/navbar.css";
+import "../../../assets/css/layout/navbar.css";
 
 //Icon
 import SearchIcon from "@mui/icons-material/Search";
@@ -74,7 +74,7 @@ function Navbar() {
           <Box>
             <Box className="nav-btn-wrapper">
               <SearchIcon fontSize="large" />
-              <Button className="nav-btn">Book Now</Button>
+              <Button className="nav-btn button-hover-scale">Book Now</Button>
             </Box>
           </Box>
         </Toolbar>

@@ -9,11 +9,10 @@ import DogWalking from "../../../assets/Images/home/dog-walking-serv-1.svg";
 import DropVisit from "../../../assets/Images/home/dropvisit.svg";
 
 //img
-import title_logo from "../../../assets/Images/home/paw-title.svg";
 import arrow from "../../../assets/Images/home/Epic-arrow4.png";
 
 //CSS
-import "../../../assets/css/home/serviceAppoinment.css";
+import "../../../assets/css/home/appoinment.css";
 import "react-datepicker/dist/react-datepicker.css";
 
 import {
@@ -27,8 +26,9 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import Heading from "../../utils/Heading";
 
-function ServiceAppoinment() {
+function Appoinment() {
   const [startDate, setStartDate] = useState(new Date());
   return (
     //appoinment section start here
@@ -41,13 +41,8 @@ function ServiceAppoinment() {
           className="appoinment-arrow"
         />
         <Box className="appoinment-heading-wrapper">
-          <Box className="appoinment-title">
-            <Box component={"img"} src={title_logo} alt="logo" height="25px" />
-            <Typography className="appoinment-title">
-              Service Appoinment
-            </Typography>
-          </Box>
-          <Typography className="appoinment-heading">
+          <Heading color={'white'}>Service Appoinment</Heading>
+          <Typography className="appoinment-heading heading-title-globle">
             Book Now An Appointment
           </Typography>
         </Box>
@@ -165,7 +160,7 @@ function ServiceAppoinment() {
             </FormControl>
           </Box>
           <Box className="appoinment-btn">
-            <Button>Submit</Button>
+            <Button className="button-hover-scale">Submit</Button>
           </Box>
         </Box>
       </Box>
@@ -174,4 +169,4 @@ function ServiceAppoinment() {
   );
 }
 
-export default ServiceAppoinment;
+export default Appoinment;

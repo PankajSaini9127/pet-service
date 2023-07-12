@@ -41,7 +41,7 @@ function OurTeam() {
     <>
     <section className="our-team-wrapper">
       <Box className="our-team-heading">
-        <Typography className="our-team-main-heading">
+        <Typography className="heading-title-globle">
           Our Awesome Team
         </Typography>
         <Typography className="our-team-sub-heading">
