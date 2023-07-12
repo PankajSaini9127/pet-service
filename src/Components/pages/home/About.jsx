@@ -116,6 +116,4 @@ function About() {
 
 export default About;
 
-function CustomListItem() {
-  return <></>;
-}
+
