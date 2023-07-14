@@ -8,3 +8,9 @@
      display: flex;
      justify-content: space-evenly;
 }
+
+/* //mobile responsive */
+@media only screen and (max-width:800px){
+    /* .specification-wrapper{width: 100%;} */
+    .specification-container{flex-wrap: wrap;}
+}

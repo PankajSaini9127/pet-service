@@ -1,0 +1,17 @@
+.nav-hamburger-list{
+    position: absolute !important;
+    top: 120px;
+    background-color: #fff;
+    z-index: 99999;
+    transition: top 1s ease-in ,visibility 0.5s ease-in,opacity 0.6s ease !important;
+    opacity: 0.2;
+    visibility: hidden;
+}
+
+.nav-sublist-item{
+    color: #222222 !important;
+    padding: 5px 25px !important;
+ }
+ .nav-sublist-item:hover{
+    color: var(--brand_color) !important;
+} 

@@ -1,51 +1,73 @@
-.about-wrapper{
+.about-wrapper {
+  display: flex;
+  margin: 0 80px;
+}
+
+.about-container-right {
+  margin-top: 100px;
+  padding: 40px;
+}
+
+.about-heading {
+  margin: 0 0 30px 0 !important;
+  font-size: 60px !important;
+  line-height: 65px !important;
+  color: #222222;
+}
+
+.about-list-container {
+  display: flex;
+}
+
+.about-description {
+  color: #646464;
+  line-height: 25px !important;
+}
+
+.listItem-icon {
+  color: #18be72 !important;
+  font-size: 20px !important;
+  margin-right: 15px;
+}
+.listItem-text {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
+.about-btn {
+  margin: 20px !important;
+  height: 50px !important;
+  width: 150px !important;
+  border-radius: 30px !important;
+  background-color: var(--brand_color) !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  text-transform: capitalize !important;
+  font-size: 18px !important;
+}
+
+/* //medium screren responsiveness */
+@media only screen and (max-width: 1200px) {
+  .about-wrapper {
+    margin: 8px !important;
+  }
+  .about-left-container {
     display: flex;
-    margin:  0 80px;
+    align-items: center;
+  }
+  .about-container-right {
+    margin-top: 0 !important;
+  }
 }
 
-
-
-
-.about-container-right{
-    margin-top: 100px;
-    padding: 40px ;
-}
-
-
-.about-heading{
-    margin: 0 0 30px 0 !important;
-    font-size: 60px !important;
-    line-height: 65px !important;
-    color: #222222;
-}
-
-.about-list-container{
-    display: flex;
-}
-
-.about-description{
-    color: #646464;
-    line-height: 25px !important;
-}
-
-.listItem-icon{
-    color: #18BE72 !important;
-    font-size: 20px !important;
-    margin-right: 15px;
-}
-.listItem-text{
-    font-size: 18px !important;
-    font-weight: 500 !important;
-}
-
-.about-btn{
-    margin: 20px !important;
-    height: 50px !important;
-    width: 150px !important;
-    border-radius: 30px !important;
-    background-color: var(--brand_color) !important;
-    color: #fff !important;
-    font-weight: 600 !important;
-    text-transform: capitalize !important;
-    font-size: 18px !important;
+@media only screen and (max-width:800px) {
+    .about-wrapper{
+        flex-wrap: wrap;
+    }
+    .about-wrapper> div{
+        width: 100%;
+    }
+    .about-left-container{
+        justify-content: center;
+    }
 }

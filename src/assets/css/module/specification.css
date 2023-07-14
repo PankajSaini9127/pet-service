@@ -6,7 +6,7 @@
     box-shadow: 0 1px 3px #646464 ;
     position: relative;
     overflow: hidden;
-    height: 180px;
+    /* height: 180px; */
 }
 
 
@@ -56,3 +56,11 @@
     color: #646464;
 }
 
+
+/* //mobile responsive */
+@media only screen and (max-width:800px) {
+    .specification-m-wrapper{
+        width: 250px;
+        margin-top: 20px !important;
+    }
+}

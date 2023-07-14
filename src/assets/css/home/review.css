@@ -68,3 +68,23 @@
     font-weight: 700 !important;
     font-family: "Playfain Display" !important;
 } */
+
+/* medium screen */
+@media only screen and (max-width:1200px) {
+    .review-heading{top:15%}
+}
+
+@media only screen and (max-width:950px) {
+    .review-heading{position: static;width: 100% !important; text-align: center;}
+}
+
+@media only screen and (max-width:800px) {
+    .review-container{flex-wrap: wrap;}
+    .review-image-container{order: 1;}
+    .review-image{height: 250px !important; width:250px !important;}
+    .review-container>div{width: 100% !important;}
+    .review-info-container{order: 2;display: grid;}
+    .review-customber-name{order: 1 !important;margin: auto !important; padding-top: 20px;}
+    .review-date{order: 2 !important; margin: auto !important; font-size: 18px !important;}
+    .review-customber-review{order: 3 !important; margin-top: 20px !important; text-align: center !important;}
+}

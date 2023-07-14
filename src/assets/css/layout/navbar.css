@@ -7,8 +7,6 @@
 .nav-container{
     margin-top: 10px ;
     justify-content: space-evenly;
-    /* width: 80% !important;
-    margin: auto; */
 }
 
 .nav-container > * {
@@ -33,6 +31,7 @@
     line-height: 23px !important;
     font-family: inherit !important;
     color: #222222 !important;
+    position: relative;
 }
 
 .nav-list-item:hover{
@@ -41,6 +40,11 @@
 .nav-list-item:hover .arrow-down{
     border: solid var(--brand_color) !important;
     border-width: 0 1px 1px 0 !important;
+}
+.nav-list-item:hover .nav-hamburger-list{
+   top: 80px ;
+   opacity: 1;
+   visibility: visible;
 }
 
 .nav-menu{
@@ -83,4 +87,18 @@
     margin-left: 9px !important;;
 }
 
+
+/* responsive */
+
+@media only screen and (max-width: 1150px) {
+    .nav-responsive-desktop{
+    display: none !important;
+    }
+}
+
+@media only screen and (min-width: 1151px) {
+    .nav-responsive-mobile{
+    display: none !important;
+    }
+}
 

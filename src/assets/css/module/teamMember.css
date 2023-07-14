@@ -1,12 +1,15 @@
 .team-details-container{
     height: 350px !important;
-    width: 300px !important;
+    width: 30% !important;
     border-radius: 25px;
     position: relative !important;
 }
 
 .team-details-container > img{
   border-radius: 10px !important;
+  width: 90%;
+  height: 270px;
+  margin: auto;
   margin: 15px;
   position: absolute;
   top: 0;
@@ -53,4 +56,11 @@
 
 .team-profile-overlay > *{
   margin: 5px;
+}
+
+
+
+
+@media only screen and (max-width:750px) {
+  .team-details-container{width: 90% !important;}
 }

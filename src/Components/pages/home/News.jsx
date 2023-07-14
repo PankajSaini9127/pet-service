@@ -48,8 +48,8 @@ function News() {
             src={Arrow}
             alt="profile"
           />
-          <Box className="news-heading">
-            <Typography className="heading-title-globle">Pet Articles</Typography>
+          <Box>
+            <Typography className="heading-title-globle news-heading">Pet Articles</Typography>
           </Box>
           <Box className="news-explore-btn">
             <Button className="button-hover-scale">View All Blog</Button>

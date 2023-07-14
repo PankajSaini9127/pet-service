@@ -22,7 +22,7 @@ function Package() {
     //  package section start here
     <section className="package-wrapper">
       <Box className="package-arrow" component={'img'} src={arrow} alt="arrow"/>
-      <Box>
+      <Box className="package-heading-container">
         <Box className="package-empty" />
         <Heading>Service Package</Heading>
         <Typography className="package-heading heading-title-globle">

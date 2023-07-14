@@ -45,3 +45,10 @@
   margin-top: 0px !important;
   visibility: visible;
 }
+
+
+/* //medium screen */
+@media only screen and (max-width:1200px) {
+  .step-book-arrow{display: none;}
+  .step-book-module-wrapper{margin-top: 20px;}
+}

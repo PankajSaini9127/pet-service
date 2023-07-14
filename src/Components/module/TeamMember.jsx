@@ -18,7 +18,7 @@ function TeamMember({member}) {
           <TwitterIcon/>
           <InstagramIcon/>
       </Box>
-      <Box component={'img'} src={member.profile} alt="profile" className='profile' height="270px"/>
+      <Box component={'img'} src={member.profile} alt="profile" className='profile' />
       <Typography className='team-name'>{member.name}</Typography>
       <Typography className='team-descrption'>{member.description}</Typography>
      

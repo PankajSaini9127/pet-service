@@ -157,3 +157,23 @@
     background-color: white !important;
     color: var(--brand_color) !important;
 }
+
+
+
+
+/* //mediumscreen */
+@media only screen and (max-width:1150px) {
+    .package-wrapper{display: block; padding: 0 !important; width: 100%;}
+    .package-heading-container{margin: 0 10px;}
+    .package-arrow{display: none;}
+    .package-wrapper > div{max-width: 100% ;}
+    .package-info-container{justify-content: space-evenly;}
+    .package-plan2{position: static;box-shadow: 0 1px 5px #646464;}
+    .package-empty{height: 50px;}
+}
+
+/* //mobile screen */
+@media only screen and (max-width:600px) {
+    .package-info-container{display: block;}
+    .package-plan{margin: 20px 0;}
+}

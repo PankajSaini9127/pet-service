@@ -38,3 +38,21 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+/* /Medium screen */
+@media  only screen and (max-width:1001px) and (min-width:601px){
+    .news-wrapper{width: 95% !important;}
+    .news-heading-arrow{display: none;}
+    .news-explore-btn{display: none;}
+}
+
+/* mobile  */
+
+@media  only screen and (max-width:700px){
+    .news-wrapper{width: 98% !important;}
+    .news-heading-arrow{display: none;}
+    .news-explore-btn{display: none;}
+    .news-article-container{display: inline-block;}
+    .news-heading-container{justify-content: center !important;}
+    .news-description{text-align: center;}
+}

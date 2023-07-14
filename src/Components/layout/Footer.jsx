@@ -84,6 +84,7 @@ function Footer() {
               component={"img"}
               src={palyStoreLogo}
               alt="playStore/appStore"
+              className="footer-app-download"
               width={"300px"}
             />
           </Box>

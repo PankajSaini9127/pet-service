@@ -44,7 +44,7 @@
     border: 1px solid #DDDDDD;
     background-color: #fff;
     border-radius: 30px;
-    height: 20px;
+    height: 62px;
     padding: 20px;
     font-size: 15px !important;
     width: 99%;
@@ -109,5 +109,17 @@
     color: #222 !important;
     font-size: 13px !important;
     text-align: center;
-    margin-bottom: 30px !important;
+    /* margin-bottom: 30px !important; */
+    padding-bottom: 20px;
+}
+
+@media  only screen and (max-width:1100px) {
+    .footer-container{display: block !important;margin: 0 80px;}
+    .footer-subscribe-container > div{min-width: 100%;}
+    .footer-subscribe-container{flex-wrap: wrap;margin-bottom: 50px;}
+    .footer-arrow{display: none;}
+    .footer-list-heading{margin: 30px 0; font-size: 28px !important;}
+    .footer-container li{font-size: 22px !important;}
+    .footer-svg{height: 100px !important;}
+    .footer-app-download{width: 150px !important;}
 }
