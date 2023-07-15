@@ -1,0 +1,23 @@
+.scroll-top-wrapper{
+    position: sticky;
+    bottom: 100px;
+    left: 90%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--brand_color);
+    display: grid;
+    place-items: center !important;
+    color: #fff;
+    font-size: 25px !important;
+    font-weight: 700 !important;
+    transition: all 1s ease !important;
+}
+
+.scroll-top-wrapper:hover{
+    background-color: #18be72 !important;
+    scale: 1.1;
+}
+
+
+

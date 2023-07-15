@@ -1,13 +1,13 @@
-import React from "react";
-import HeroSection from "./HeroSection";
-import OurTeam from "./OurTeam";
-import News from "./News";
-import Package from "./Package";
-import Appoinment from "./Appoinment";
-import Review from "./Review";
-import About from "./About";
-import StepToBook from "./StepToBook";
-import Specification from "./Specification";
+//components
+import About from "../../utilsComponents/About";
+import Appoinment from "../../utilsComponents/Appoinment";
+import HeroSection from "../../utilsComponents/HeroSection"
+import News from "../../utilsComponents/News";
+import OurTeam from "../../utilsComponents/OurTeam";
+import Package from "../../utilsComponents/Package";
+import Review from "../../utilsComponents/Review";
+import Specification from "../../utilsComponents/Specification";
+import StepToBook from "../../utilsComponents/StepToBook";
 
 function Home() {
   return (

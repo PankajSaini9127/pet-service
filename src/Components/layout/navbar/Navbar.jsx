@@ -12,18 +12,19 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Nav_Logo from "../../../assets/Images/home/nav-logo.svg";
 
 //module
-import { Menu_List } from "../../module/Menu-list";
+import { MenuList } from "../../module/Menu-list";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const homeList = [
-    { text: "Main Home", navigate: "" },
-    { text: "Heidy Pet Sitter", navigate: "" },
-    { text: "Caleb Pet Sitter", navigate: "" },
-    { text: "Dog Boarding", navigate: "" },
-    { text: "Dog Grooming", navigate: "" },
-    { text: "Dog Training", navigate: "" },
-    { text: "Dog Food & Nutrition", navigate: "" },
-    { text: "Dog Veterinary", navigate: "" },
+    { text: "Main Home", navigate: "/" },
+    { text: "Heidy Pet Sitter", navigate: "/" },
+    { text: "Caleb Pet Sitter", navigate: "/" },
+    { text: "Dog Boarding", navigate: "/" },
+    { text: "Dog Grooming", navigate: "/" },
+    { text: "Dog Training", navigate: "/" },
+    { text: "Dog Food & Nutrition", navigate: "/" },
+    { text: "Dog Veterinary", navigate: "/" },
   ];
 
   const serviceList = [
@@ -47,8 +48,8 @@ function Navbar() {
   ];
 
   const pageList = [
-    { text: "Booking", navigate: "" },
-    { text: "Our Team", navigate: "" },
+    { text: "Booking", navigate: "/booking" },
+    { text: "Our Team", navigate: "/our-team" },
     { text: "Princing Plans", navigate: "" },
     { text: "404 not Found", navigate: "" },
   ];
@@ -57,7 +58,7 @@ function Navbar() {
     <>
       <AppBar className="nav-wrapper" position="static">
         <Toolbar className="nav-container">
-          <SearchIcon fontSize="large" className="nav-responsive-mobile"/>
+          <SearchIcon fontSize="large" className="nav-responsive-mobile" />
           <Box>
             <Box component={"img"} src={Nav_Logo} alt="logo" />
           </Box>
@@ -66,17 +67,22 @@ function Navbar() {
               <span>
                 Home &nbsp; <i className="arrow-down"></i>
               </span>
-              <Menu_List options={homeList} />
+              <MenuList options={homeList} />
             </MenuItem>
 
-            <MenuItem className="nav-list-item">About Us</MenuItem>
+            <MenuItem className="nav-list-item">
+              <Link to="about-us" className="nav-link-tag">
+                About Us{" "}
+              </Link>
+            </MenuItem>
+
             <MenuItem className="nav-list-item">
               Service
               <span>
                 {" "}
                 &nbsp; <i className="arrow-down"></i>
               </span>
-              <Menu_List options={serviceList} />
+              <MenuList options={serviceList} />
             </MenuItem>
             <MenuItem className="nav-list-item">
               Shop
@@ -84,7 +90,7 @@ function Navbar() {
                 {" "}
                 &nbsp; <i className="arrow-down"></i>
               </span>
-              <Menu_List options={shopList} />
+              <MenuList options={shopList} />
             </MenuItem>
             <MenuItem className="nav-list-item">
               Blog
@@ -92,7 +98,7 @@ function Navbar() {
                 {" "}
                 &nbsp; <i className="arrow-down"></i>
               </span>
-              <Menu_List options={blogList} />
+              <MenuList options={blogList} />
             </MenuItem>
             <MenuItem className="nav-list-item">
               Page
@@ -100,24 +106,29 @@ function Navbar() {
                 {" "}
                 &nbsp; <i className="arrow-down"></i>
               </span>
-              <Menu_List options={pageList} />
+              <MenuList options={pageList} />
             </MenuItem>
-            <MenuItem className="nav-list-item">Contact Us</MenuItem>
+            <MenuItem className="nav-list-item">
+              <Link to="contact-us" className="nav-link-tag">
+                Contact Us
+              </Link>
+            </MenuItem>
           </Box>
 
           <Box className="nav-responsive-desktop">
             <Box className="nav-btn-wrapper">
               <SearchIcon fontSize="large" />
+              <Link to="/booking">
               <Button className="nav-btn button-hover-scale">Book Now</Button>
+              </Link>
             </Box>
           </Box>
-          <MenuIcon fontSize="large" className="nav-responsive-mobile"/>
+          <MenuIcon fontSize="large" className="nav-responsive-mobile" />
         </Toolbar>
       </AppBar>
       <Divider className="nav-divider" />
     </>
   );
 }
-
 
 export default Navbar;

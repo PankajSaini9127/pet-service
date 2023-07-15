@@ -1,14 +1,14 @@
 import React from "react";
 
 //css
-import "../../../assets/css/home/package.css";
+import "../../assets/css/utilsComponents/package.css";
 import { Box, Button, List, ListItem, Typography } from "@mui/material";
-import Heading from "../../utils/Heading";
+import Heading from "../utils/Heading";
 
 //images
-import solowalk from "../../../assets/Images/home/solo-walk.png";
-import groupWalk from "../../../assets/Images/home/group-walk.png";
-import arrow from "../../../assets/Images/home/Epic-arrow3.png";
+import solowalk from "../../assets/Images/home/solo-walk.png";
+import groupWalk from "../../assets/Images/home/group-walk.png";
+import arrow from "../../assets/Images/home/Epic-arrow3.png";
 
 
 function Package() {

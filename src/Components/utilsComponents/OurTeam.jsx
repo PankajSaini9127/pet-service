@@ -1,17 +1,18 @@
 import React from "react";
-
-//css
-import "../../../assets/css/home/ourTeam.css";
 import { Box, Divider, Typography } from "@mui/material";
 
+//css
+import "../../assets/css/utilsComponents/ourTeam.css";
+
+
 //img
-import member1 from "../../../assets/Images/members/member1.jpeg";
-import member2 from "../../../assets/Images/members/member2.jpeg";
-import member3 from "../../../assets/Images/members/member3.jpeg";
-import member4 from "../../../assets/Images/members/members-4.jpg";
+import member1 from "../../assets/Images/members/member1.jpeg";
+import member2 from "../../assets/Images/members/member2.jpeg";
+import member3 from "../../assets/Images/members/member3.jpeg";
+import member4 from "../../assets/Images/members/members-4.jpg";
 
 //component
-import TeamMember from "../../module/TeamMember";
+import TeamMember from "../module/TeamMember";
 
 const members = [
   {

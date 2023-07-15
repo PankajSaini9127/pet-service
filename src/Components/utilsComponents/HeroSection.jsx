@@ -1,14 +1,14 @@
 import React from "react";
-
-//css
-import "../../../assets/css/home/heroSection.css";
 import { Box, Button, Typography } from "@mui/material";
 
+//css
+import "../../assets/css/utilsComponents/heroSection.css";
+
 //image
-import heroImg from "../../../assets/Images/home/slider1.jpg";
-import heroImg2 from "../../../assets/Images/home/epipasw-slider6.jpg";
-import heroImg3 from "../../../assets/Images/home/epipasw-slider5.jpg";
-import heroImg4 from "../../../assets/Images/home/epic-slider2.jpg";
+import heroImg from "../../assets/Images/home/slider1.jpg";
+import heroImg2 from "../../assets/Images/home/epipasw-slider6.jpg";
+import heroImg3 from "../../assets/Images/home/epipasw-slider5.jpg";
+import heroImg4 from "../../assets/Images/home/epic-slider2.jpg";
 
 function HeroSection() {
   return (

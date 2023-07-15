@@ -1,16 +1,16 @@
 import React from "react";
 
 //css
-import "../../../assets/css/home/specification.css";
+import "../../assets/css/utilsComponents/specification.css";
 import { Box } from "@mui/material";
 
 //images
-import img1 from "../../../assets/Images/home/heart-paw.svg";
-import img2 from "../../../assets/Images/home/medal.svg";
-import img3 from "../../../assets/Images/home/walking-dog.svg";
+import img1 from "../../assets/Images/home/heart-paw.svg";
+import img2 from "../../assets/Images/home/medal.svg";
+import img3 from "../../assets/Images/home/walking-dog.svg";
 
 //module
-import SpecificationModule from "../../module/SpecificationModule";
+import SpecificationModule from "../module/SpecificationModule";
 
 const specification = [
   {

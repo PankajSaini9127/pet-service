@@ -1,0 +1,80 @@
+.branch-details-container {
+    /* height: 400px !important; */
+    width: 400px !important;
+    border-radius: 25px;
+    position: relative !important;
+    margin: 15px;
+  }
+  
+  .branch-details-container > img {
+    border-radius: 10px !important;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    /* position: absolute; */
+    /* top: 0; */
+  }
+  
+  .branch-name {
+    font-size: 35px !important;
+    font-weight: 600 !important;
+    line-height: 25px !important;
+    color: rgba(0, 0, 0, 0.9);
+    margin-top: 15px !important;
+  }
+  
+  .branch-address {
+    font-weight: 500 !important;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 18px !important;
+    line-height: 35px !important;
+    margin-top: 5px !important;
+  }
+  
+  .branch-email{
+      font-weight: 500 !important;
+      color: rgba(0, 0, 0, 0.75);
+      font-size: 16px !important;
+      line-height: 22px !important;
+      letter-spacing: 2px !important;
+  }
+  
+  .branch-day-off{
+      font-weight: 500 !important;
+      color: #646464 !important;
+      font-size: 18px !important;
+      line-height: 22px !important;
+      letter-spacing: 2px !important;
+      word-spacing: 2px !important;
+  }
+  
+  /* //overlay in uesr details */
+  
+  .branch-profile-overlay {
+    background: #00000099 !important;
+    height: 270px;
+    border-radius: 10px;
+    z-index: 11111 !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    visibility: hidden;
+    transition: all 20ms ease-in;
+  }
+  
+  .branch-details-container:hover .branch-profile-overlay {
+    visibility: visible !important;
+  }
+  
+  .branch-profile-overlay > * {
+    margin: 5px;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    .team-details-container {
+      width: 90% !important;
+    }
+  }
+  

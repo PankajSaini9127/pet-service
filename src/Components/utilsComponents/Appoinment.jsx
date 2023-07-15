@@ -2,19 +2,6 @@ import React, { useState } from "react";
 
 import DatePicker from "react-datepicker";
 
-//SVG ICON
-import DogyCare from "../../../assets/Images/home/first-aid-kit.svg";
-import HouseSitting from "../../../assets/Images/home/house-siting.svg";
-import DogWalking from "../../../assets/Images/home/dog-walking-serv-1.svg";
-import DropVisit from "../../../assets/Images/home/dropvisit.svg";
-
-//img
-import arrow from "../../../assets/Images/home/Epic-arrow4.png";
-
-//CSS
-import "../../../assets/css/home/appoinment.css";
-import "react-datepicker/dist/react-datepicker.css";
-
 import {
   Box,
   Button,
@@ -26,7 +13,22 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import Heading from "../../utils/Heading";
+
+//SVG ICON
+import DogyCare from "../../assets/Images/home/first-aid-kit.svg";
+import HouseSitting from "../../assets/Images/home/house-siting.svg";
+import DogWalking from "../../assets/Images/home/dog-walking-serv-1.svg";
+import DropVisit from "../../assets/Images/home/dropvisit.svg";
+
+//img
+import arrow from "../../assets/Images/home/Epic-arrow4.png";
+
+//CSS
+import "../../assets/css/utilsComponents/appoinment.css";
+import "react-datepicker/dist/react-datepicker.css";
+
+//modules
+import Heading from "../utils/Heading";
 
 function Appoinment() {
   const [startDate, setStartDate] = useState(new Date());

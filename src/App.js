@@ -1,14 +1,12 @@
 import "./App.css";
-import Footer from "./Components/layout/Footer";
-import Navbar from "./Components/layout/navbar/Navbar";
-import Home from "./Components/pages/home/Home";
+import Routes from "./Components/Routes";
+import ScrollToTop from "./Components/utils/ScrollToTop";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <Footer />
+    <Routes/>
+    <ScrollToTop/>
     </>
   );
 }

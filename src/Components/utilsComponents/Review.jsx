@@ -4,12 +4,12 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 
 //css
-import "../../../assets/css/home/review.css";
+import "../../assets/css/utilsComponents/review.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 //images
-import User1 from "../../../assets/Images/testimonials/testimonials-2.jpg";
-import User2 from "../../../assets/Images/testimonials/testimonials-img2.jpg";
+import User1 from "../../assets/Images/testimonials/testimonials-2.jpg";
+import User2 from "../../assets/Images/testimonials/testimonials-img2.jpg";
 
 function Review() {
   return (

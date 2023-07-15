@@ -1,18 +1,19 @@
 import { Box } from "@mui/system";
 import React from "react";
 
-import "../../../assets/css/home/news.css";
+import "../../assets/css/utilsComponents/news.css";
 import { Button, Typography } from "@mui/material";
 
 //img
-import news1 from "../../../assets/Images/home/epicpaws-blog4.jpg";
-import news2 from "../../../assets/Images/home/epicpaws-blog6.jpg";
-import news3 from "../../../assets/Images/home/epicpaws-blog8.jpg";
-import Arrow from "../../../assets/Images/home/Epic-arrow05 (1).png";
+import news1 from "../../assets/Images/home/epicpaws-blog4.jpg";
+import news2 from "../../assets/Images/home/epicpaws-blog6.jpg";
+import news3 from "../../assets/Images/home/epicpaws-blog8.jpg";
+import Arrow from "../../assets/Images/home/Epic-arrow05 (1).png";
+
 
 //module
-import NewsArticle from "../../module/NewsArticle";
-import Heading from "../../utils/Heading";
+import Heading from "../utils/Heading";
+import NewsArticle from "../module/NewsArticle";
 
 const news = [
   {

@@ -2,6 +2,7 @@
     background-image: url('../../../assets/Images/home/appointmentBg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center!important;
     height: 1100px;
     opacity: 0.95;
     width: 100%;

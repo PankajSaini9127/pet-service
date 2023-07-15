@@ -2,11 +2,11 @@ import { Box, Button, List, ListItem, Typography } from "@mui/material";
 import React from "react";
 
 //css
-import "../../../assets/css/home/about.css";
+import "../../assets/css/utilsComponents/about.css";
 
 //images
-import aboutBanner from "../../../assets/Images/home/about-banner.png";
-import Heading from "../../utils/Heading";
+import aboutBanner from "../../assets/Images/home/about-banner.png";
+import Heading from "../utils/Heading";
 
 //icon
 import PetsRoundedIcon from "@mui/icons-material/PetsRounded";

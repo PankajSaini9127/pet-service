@@ -2,16 +2,16 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 
 //css
-import "../../../assets/css/home/stepToBook.css";
+import "../../assets/css/utilsComponents/stepToBook.css";
 
 //image
-import arrow from "../../../assets/Images/home/Epic-arrow2.png";
-import img1 from "../../../assets/Images/home/Epic-service_icon1.png";
-import img2 from "../../../assets/Images/home/Epic-service_icon2.png";
-import img3 from "../../../assets/Images/home/Epic-service_icon3.png";
+import arrow from "../../assets/Images/home/Epic-arrow2.png";
+import img1 from "../../assets/Images/home/Epic-service_icon1.png";
+import img2 from "../../assets/Images/home/Epic-service_icon2.png";
+import img3 from "../../assets/Images/home/Epic-service_icon3.png";
 
 //module
-import StepBookModule from "../../module/StepBookModule";
+import StepBookModule from "../module/StepBookModule";
 
 function StepToBook() {
   return (

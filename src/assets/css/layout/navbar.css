@@ -32,6 +32,7 @@
     font-family: inherit !important;
     color: #222222 !important;
     position: relative;
+    text-decoration: none !important;
 }
 
 .nav-list-item:hover{
@@ -45,6 +46,11 @@
    top: 80px ;
    opacity: 1;
    visibility: visible;
+}
+
+.nav-link-tag{
+    text-decoration: none;
+    color: inherit !important;
 }
 
 .nav-menu{

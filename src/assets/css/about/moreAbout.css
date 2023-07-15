@@ -1,0 +1,74 @@
+.more-about-wrapper{
+    position: relative;
+}
+
+.more-about-container{
+    height: 600px;
+    background-image: url('../../Images/utils/about-us-banner.png');
+    background-position: center top !important;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.more-about-container >a{
+    color: white;
+}
+
+.more-about-icon{
+    font-size: 150px !important;
+    font-weight: lighter !important;
+    transition: scale 1s ease !important;
+}
+.more-about-icon:hover{
+    scale: 1.2;
+}
+
+.more-info-container{
+    padding: 60px;
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    background-color: #FAF6F0;
+    /* color: #646464; */
+    width: 30vw;
+    border-radius: 5px !important;
+}
+
+.more-info-heading{
+    font-size: 48px !important;
+    font-weight: bold !important;
+    line-height: 55px !important;
+    color: #222222;
+}
+
+.more-info-description{
+    color: #646464;
+    line-height: 24px !important;
+    font-size: 18px !important;
+}
+
+.more-about-btn{
+    height: 55px !important;
+    padding: 0 30px !important;
+    border-radius: 30px !important;
+    background-color: var(--brand_color) !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    margin-top: 50px !important;
+    text-transform: capitalize !important;
+}
+
+.more-about-btn:hover{
+    background-color: var(--brand_color);
+}
+
+
+/* //mediumscreen responsive ness */
+@media only screen and (max-width:1000px) {
+    .more-about-container{height: 400px; background-position: top left !important ;}
+    .more-info-container{position: static; width: 100vw; padding: 20px 30px;}
+    .more-about-btn{margin-top: 15px !important;}
+}
