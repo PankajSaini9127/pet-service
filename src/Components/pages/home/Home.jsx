@@ -9,6 +9,9 @@ import Review from "../../utilsComponents/Review";
 import Specification from "../../utilsComponents/Specification";
 import StepToBook from "../../utilsComponents/StepToBook";
 
+//dummydata
+import {membersAboutPage} from "../../../dummyData/TeamMember"
+
 function Home() {
   return (
     <>
@@ -19,7 +22,7 @@ function Home() {
       <Review/>
       <Package/>
       <Appoinment/>
-      <OurTeam />
+      <OurTeam members={membersAboutPage} exprience={false}/>
       <News/>
     </>
   );

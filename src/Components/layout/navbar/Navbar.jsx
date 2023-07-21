@@ -28,8 +28,8 @@ function Navbar() {
   ];
 
   const serviceList = [
-    { text: "Our Services", navigate: "" },
-    { text: "Service Details", navigate: "" },
+    { text: "Our Services", navigate: "/our-service" },
+    { text: "Service Details", navigate: "/single-service" },
     { text: "Dog Walker Profile", navigate: "" },
   ];
 
@@ -50,8 +50,8 @@ function Navbar() {
   const pageList = [
     { text: "Booking", navigate: "/booking" },
     { text: "Our Team", navigate: "/our-team" },
-    { text: "Princing Plans", navigate: "" },
-    { text: "404 not Found", navigate: "" },
+    { text: "Princing Plans", navigate: "/pricing-table" },
+    { text: "404 not Found", navigate: "/404" },
   ];
 
   return (

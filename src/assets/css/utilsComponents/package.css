@@ -1,13 +1,16 @@
 .package-wrapper{
-    padding: 100px 0 30px 0 !important;
+padding: 30px 0 30px 0 !important;
+}
+.package-container1{
     display: flex;
     justify-content: center;
     width: 90%;
     position: relative;
+    flex-wrap: wrap;
 }
 
 
-.package-wrapper > div{
+.package-container1> div{
     max-width: 50%;
 }
 
@@ -56,8 +59,10 @@
 }
 
 .package-plan{
-    border: 1px solid #646464;
+    /* border: 1px solid #646464; */
+    box-shadow: 0 1px 2px #646464;
     border-radius: 20px !important;
+    min-width: 300px !important;
 }
 
 .package-plan-name{
@@ -160,6 +165,30 @@
 
 
 
+.package-pricing-table-h1{
+    text-align: center !important;
+    line-height: 60px !important;
+}
+.package-container-pricing-tabel{
+    margin: auto;
+    width: fit-content;
+    display: flex;
+}
+.package-plan-middle{
+    position: relative;
+    top: -30px;
+    z-index: 225;
+    background-color: #fff;
+}
+
+.package-first{
+    position: relative;
+    left: 15px;
+}
+.package-right{
+    position: relative;
+    right: 15px;
+}
 
 /* //mediumscreen */
 @media only screen and (max-width:1150px) {

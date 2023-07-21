@@ -20,8 +20,11 @@ function TeamMember({member}) {
       </Box>
       <Box component={'img'} src={member.profile} alt="profile" className='profile' />
       <Typography className='team-name'>{member.name}</Typography>
+      {
+      member.rent&& <Typography className='team-rent'>{member.rent}</Typography>
+     }
       <Typography className='team-descrption'>{member.description}</Typography>
-     
+   
     </Box>
     </>
   )

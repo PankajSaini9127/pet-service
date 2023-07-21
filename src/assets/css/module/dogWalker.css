@@ -1,0 +1,92 @@
+.dog-walker-wrapper{
+    display: flex;
+}
+.dog-walker-wrapper>*{
+    width: 50%;
+}
+
+.dog-walker-image-container{
+    margin: 10px;
+    border-radius: 15px ;
+    overflow: hidden ;
+}
+.dog-walker-image-container>img{
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 450px;
+}
+
+.dog-walker-text-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 30px;
+}
+.dog-walker-text-container > a{
+     display: flex;
+     text-decoration: none;
+}
+.order2{
+    order: 2 !important;
+}
+.dog-walker-text-container :first-child{
+    margin-left: auto !important;
+}
+.dog-walker-h1{
+    font-size: 50px !important;
+    font-weight: 600 !important;
+    line-height: 100px !important;
+    text-align: right ;
+    color: #222222;
+}
+.dog-walker-h4{
+    text-align: right;
+    color: #646464 !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+}
+
+.book-dog-walk-btn{
+    height: 50px ;
+    background-color: var(--brand_color) !important;
+    padding: 25px !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    width: fit-content !important;
+    border-radius: 30px !important;
+    margin-top: 50px !important;
+    margin-left: auto !important;
+}
+
+/* //responsive  */
+@media only screen and (max-width:1050px) {
+    .dog-walker-wrapper{
+        display: block;
+    }
+    .dog-walker-wrapper>*{
+        width: 100%;
+    }
+    
+    .dog-walker-text-container :first-child{
+        margin: auto !important;
+    }
+    .dog-walker-h1{
+        text-align: center !important;
+        line-height: 50px !important;
+        font-size: 40px !important;
+    }
+    .dog-walker-h4{
+        text-align: center !important;
+    }
+    .book-dog-walk-btn{
+        margin: 10px auto !important;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .dog-walker-h1{
+        font-size: 30px !important;
+        line-height: 50px !important;
+    }    
+}

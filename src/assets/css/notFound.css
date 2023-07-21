@@ -1,0 +1,44 @@
+.not-found-page{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found-h2{
+    font-size: 80px !important;
+    font-weight: 600 !important;
+    line-height: 100px !important;
+    text-align: center;
+}
+
+.not-found-h3{
+    font-size: 35px !important;
+    font-weight: 600 !important;
+    line-height: 50px !important;
+    text-align: center;
+}
+.not-found-h6{
+    font-size: 18px !important;
+    line-height: 22px !important;
+    color: #646464;
+    text-align: center;
+}
+
+.not-found-page a{
+    text-decoration: none !important;
+}
+
+.back-to-home-btn{
+    border-radius: 30px !important;
+    font-weight: 600 !important;
+    color: #fff;
+    background-color: var(--brand_color) !important;
+    height: 55px !important;
+    padding: 0 25px !important;
+    text-transform: capitalize;
+    display: flex;
+    margin: auto;
+    margin-top: 35px !important;
+    text-decoration: none !important;
+}

@@ -1,6 +1,7 @@
 .team-details-container{
-    height: 350px !important;
+    min-width: 350px !important;
     width: 30% !important;
+    min-width: 350px !important;
     border-radius: 25px;
     position: relative !important;
 }
@@ -31,6 +32,16 @@
  font-size: 16px !important;
  padding: 5px 15px;
  line-height: 18px !important;
+}
+
+.team-rent{
+  text-align: center;
+  font-weight: 500n !important;
+  color: #646464 !important;
+  font-size: 18px !important;
+  word-spacing: 2px !important;
+  letter-spacing: 1px !important;
+  line-height: 30px !important;
 }
 
 /* //overlay in uesr details */

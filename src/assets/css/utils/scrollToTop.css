@@ -1,6 +1,6 @@
 .scroll-top-wrapper{
     position: sticky;
-    bottom: 100px;
+    bottom: 50px;
     left: 90%;
     height: 50px;
     width: 50px;
@@ -16,7 +16,7 @@
 
 .scroll-top-wrapper:hover{
     background-color: #18be72 !important;
-    scale: 1.1;
+    font-size: 30px !important;
 }
 
 
