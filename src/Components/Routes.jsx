@@ -16,8 +16,13 @@ import PricingTable from "./pages/pricingTable/PricingTable";
 import NotFoundPage from "./pages/404NotFound/404Page";
 import ServicePage from "./pages/our-service/ServicePage";
 import ServiceDetails from "./pages/ServiceDetails/ServiceDetails";
+import Auth from "./auth/Auth";
+import { useSelector } from "react-redux";
+import ResetPasswordPage from "./pages/resetPassword/ResetPassword";
 
-function Routing() {
+function Routing({setOpen}) {
+  const {auth:{auth}} = useSelector(s=>s);
+
   return (
     <BrowserRouter>
       <Navbar />
@@ -25,12 +30,12 @@ function Routing() {
         <Route path="/" exact element={<Home />} />
         <Route path="/about-us" exact element={<AboutPage />} />
         <Route path="/contact-us" element={<ContectPage />} />
-        <Route path="/booking" element={<Booking />} />
+        <Route path="/booking" element={ auth ?<Booking/>:<Auth/>} />
         <Route path="/our-team" element={<OurTeamPage />} />
         <Route path="/pricing-table" element={<PricingTable/>}/>
         <Route path="/our-service" element={<ServicePage/>}/>
         <Route path="/single-service" element={<ServiceDetails/>} />
-
+        <Route path="/reset-password/:email" element={<ResetPasswordPage/>}/>
         
         <Route path="*" element={<NotFoundPage/>}/>
 
