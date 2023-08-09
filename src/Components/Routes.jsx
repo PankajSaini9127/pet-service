@@ -19,8 +19,11 @@ import ServiceDetails from "./pages/ServiceDetails/ServiceDetails";
 import Auth from "./auth/Auth";
 import { useSelector } from "react-redux";
 import ResetPasswordPage from "./pages/resetPassword/ResetPassword";
+import ProfilePage from "./pages/profile/ProfilePage";
+import DoctorPage from "./pages/doctor/DoctorPage";
 
-function Routing({setOpen}) {
+
+function Routing() {
   const {auth:{auth}} = useSelector(s=>s);
 
   return (
@@ -36,6 +39,8 @@ function Routing({setOpen}) {
         <Route path="/our-service" element={<ServicePage/>}/>
         <Route path="/single-service" element={<ServiceDetails/>} />
         <Route path="/reset-password/:email" element={<ResetPasswordPage/>}/>
+        <Route path="/profile"  element={auth ? <ProfilePage/>: <Auth/>}/>
+        <Route path="/doctor-list" element={<DoctorPage/>}/>
         
         <Route path="*" element={<NotFoundPage/>}/>
 

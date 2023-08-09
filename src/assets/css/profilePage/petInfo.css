@@ -1,0 +1,17 @@
+.pet-profile-heading{
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    margin: 20px 0 !important;
+    text-align: center;
+}
+
+.pet-profile-add-pet-btn{
+    background-color: var(--brand_color) !important;
+    color: #FFFFFF !important;
+    text-transform: capitalize !important;
+    border-radius: 30px !important;
+    width: 120px !important;
+    height: 40px !important;
+    margin: 10px !important;
+    font-weight: 600 !important;
+}

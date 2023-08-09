@@ -1,0 +1,44 @@
+.add-pet-form-wrapper{
+    padding: 30px !important;
+}
+.add-pet-form-heading{
+    text-align: center;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    margin-bottom: 15px !important;
+    color: var(--brand_color) !important;
+}
+.add-pet-form-feed-container{
+    border: 1px solid #999999 !important;
+    border-radius: 30px;
+    padding: 15px 20px !important;
+    /* margin: 0 10px 10px 10px !important; */
+}
+.add-pet-form-feed-container:hover{
+    border: 1px solid var(--brand_color) !important;
+}
+
+
+.add-pet-form-error{
+    padding-left: 30px;
+    margin-bottom: 5px !important;
+}
+
+
+.add-pet-form-btn{
+    height: 50px;
+    width: 150px;
+    border: 2px solid var(--brand_color) !important;
+    border-radius: 30px !important;
+    color: var(--brand_color) !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    transition: all ease 1s !important;
+}
+
+.add-pet-form-btn:hover{
+    color: #FFFFFF !important;
+    background-color: var(--brand_color) !important;
+}
+

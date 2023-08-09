@@ -73,7 +73,7 @@
 
 
 /* radio btn hover */
-.appoinment-radio-btn > label:hover{
+.appoinment-radio-btn-active{
     border: 1px solid var(--brand_color) !important;
     color: var(--brand_color) !important;
 }
@@ -134,6 +134,10 @@
     border: 1px solid var(--brand_color) !important;
 }
 
+.appoinment-timeslot-active {
+    border: 1px solid var(--brand_color) !important;
+    color: var(--brand_color) !important;
+}
 /* submit form */
 .appoinment-btn {
     margin-top: 20px;

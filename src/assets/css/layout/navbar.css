@@ -94,6 +94,26 @@
 }
 
 
+.naw-drawer-logo{
+    display: flex;
+    justify-content: center;
+    margin:10px 0;
+    height: 35px;
+}
+.nav-drawer-list{
+    font-size: 20px !important;
+    font-weight: lighter !important;
+}
+.nav-drawer-list:hover{
+   color: var(--brand_color);
+}
+
+.nav-drawer-sub-list{
+    padding-left: 4px;
+}
+.nav-drawer-sub-list:hover{
+    color: var(--brand_color) !important;
+}
 /* responsive */
 
 @media only screen and (max-width: 1150px) {

@@ -90,7 +90,7 @@ function Footer() {
           </Box>
         </Box>
         <Typography className="footer-copyright-text">
-          © 2023 EpicPaws is Powered by Bitwit-tech.
+          © 2023 EpicPaws is Designed by Bitwit-tech.
         </Typography>
       </Box>
       {/* footer section end Here */}

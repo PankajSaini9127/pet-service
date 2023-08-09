@@ -1,0 +1,4 @@
+.data-table-allcell{
+    display: flex !important;
+    justify-content: center !important;
+}

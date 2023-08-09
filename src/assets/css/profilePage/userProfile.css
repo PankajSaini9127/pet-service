@@ -1,0 +1,23 @@
+.user-profile-wrapper{
+    /* height:  400px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile-container{
+       /* min-height: 200px; */
+       /* box-shadow: 0 1px 2px black; */
+       /* min-width: 40%; */
+}
+.user-heading{
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    margin: 15px  0!important;
+}
+
+.user-profile-text{
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}

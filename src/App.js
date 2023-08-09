@@ -4,6 +4,7 @@ import Routes from "./Components/Routes";
 import ScrollToTop from "./Components/utils/ScrollToTop";
 import store from "./store/store";
 import SnakeBar from "./Components/utils/SnakeBar";
+import LoadingScreen from "./Components/utils/LoadingScreen";
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
         <Routes />
         <ScrollToTop />
         <SnakeBar />
+        <LoadingScreen/>
       </Provider>
+   
     </>
   );
 }

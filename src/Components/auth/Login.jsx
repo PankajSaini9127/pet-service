@@ -24,6 +24,7 @@ import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { useDispatch } from "react-redux";
 import { set_auth } from "../../store/actions/authActions";
 import { setAlert } from "../../store/actions/alert-action";
+import { setLoading } from "../../store/actions/loading-action";
 
 function Login({ open, setOpen }) {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -64,15 +65,19 @@ function Login({ open, setOpen }) {
     e.preventDefault();
     try {
       if (validator(formData)) {
+        dispatch(setLoading(true))
         const result = await login(formData);
         if(result.status === 200){
-          dispatch(set_auth({auth:true,token:result.authToken,name:result.data.name}));
+          dispatch(set_auth({auth:true,token:result.authToken,data:result.data}));
           dispatch(setAlert({open:true,variant:"success",message:result.message}));
+          dispatch(setLoading(false))
         }else{
+          dispatch(setLoading(false))
           dispatch(setAlert({open:true,variant:"error",message:result.message}));
         }
       }
     } catch (error) {
+      dispatch(setLoading(false))
       dispatch(setAlert({open:true,variant:"error",message:"Something Went Wrong."}));
     }
    

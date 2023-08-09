@@ -1,0 +1,19 @@
+.profile-tab-wrapper{
+    display: flex;
+    flex-grow: 1;
+}
+
+
+.profile-tab{
+    width: 150px !important;
+    text-transform: capitalize !important;
+    
+}
+.profile-tab-active{
+    color: var(--brand_color) !important;
+}
+
+.tab-panel{
+    width: 100%;
+    min-height:  350px;
+}

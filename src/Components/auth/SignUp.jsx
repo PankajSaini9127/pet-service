@@ -15,6 +15,7 @@ import "../../assets/css/auth/signup.css";
 
 //image
 import logo from "../../assets/Images/home/nav-logo.svg";
+
 import { register } from "../../service/Api";
 import { useDispatch } from "react-redux";
 import { setAlert } from "../../store/actions/alert-action";
